@@ -1,0 +1,27 @@
+{
+  "name": "poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "test:poc": "playwright install && playwright test --project=saucedemo-e2e-chrome && playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.8",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-playwright": "^1.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "quicktype-core": "^23.0.170",
+    "ts-essentials": "^9.1.2"
+  }
+}
