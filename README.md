@@ -1,4 +1,4 @@
-## Rationale
+## Background
 
 This POC was created as a homework exercise in July 2024.
 
@@ -13,7 +13,7 @@ Some of the fields must be filled with data fetched from an external API, so the
 
 NodeJS and NPM must be installed.
 
-# Execution
+## Execution
 
 - Install dependencies (defined in the package.json file) by executing "npm install" command
 - Execute the test script "test:poc" defined in the package.json file
@@ -25,7 +25,7 @@ The solution uses Playwright with TypeScript, along with the following dependenc
 - QuickType: to provide type safety by generating contracts for an external API that does not have an OpenAPI specification 
 - DotEnv: to provide environment variables (hardcoded with static data for the purpose of the POC)
 
-# Layers
+## Layers
 
 - Test Layer: Utilizes the Playwright test runner to execute E2E and API scripts. The POC has only one E2E test under tests/e2e/main folder. 
 - Business Logic Layer: Uses Page Objects and API Services to encapsulate business logic of the tested application(s)
